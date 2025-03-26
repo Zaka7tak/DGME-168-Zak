@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>flexbox layout</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;							}
+		.container{
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			height: 100vh;
+									}
+		.header, .footer{
+			dispay:flex;
+			flex-direction: row;
+			justify-content: center;
+			background: #333;
+			color: white;
+			text-align: center;
+			padding: 20px;
+			width: 100%;
+		
+}
+			
+		.main-content{
+			display:flex;
+			flex: 1;
+		}
+		.sidebar{
+			background: #555;
+			color: white;
+			width: 250px;
+			padding: 20px;
+		}
+		.content {
+			flex: 1;
+			background: #eee;
+			padding: 20px;
+		}
+		
+		}
+		.nav-links{
+		color: white;
+		text-align: center;
+		
+		}
+		.nav-links a{
+		
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			line-height: 70px;
+			color: white;
+			text-decoration: none;
+			font-size: 18px;}
+		.img{
+			align-content: flex-start
+		}
+		a:hover {text-decoration: underline}
+		
+	</style>
+</head>
+
+<body>
+<div class="container">
+	<header class="header">Something About Apples</header>
+  <div class="main-content">
+		<aside class="sidebar">
+		<div class=nav-links>
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Services</a>
+		<a href="#">Contact</a></div></aside>
+		<main class="content"><div class=nav-links><img src="https://www.apple.com/lae/environment/images/overview/hero_macmini__bfh1r474i3g2_large.jpg" alt="Environment - Apple" width="234" height="250" class= "img" img padding= "200px" align="middle"/></div>
+		<div>Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple </div>
+		    <img  class="img" img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Pink_lady_and_cross_section.jpg/800px-Pink_lady_and_cross_section.jpg" alt="Apple - Wikipedia" width="530" height="152" align="center"/><div>
+			 Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple </div></main></div>
+
+  <footer class="footer">Footer</footer>
+  </div>
+</body>
+</html>
+</div>
